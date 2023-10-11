@@ -345,4 +345,5 @@ Subsequent IoT posts on [my blog](https://allthingscloud.eu) will reference this
 Now to connect that old umbrella to the interweb.
 
 Happy coding!
-Graz
+
+[Graz](https://www.linkedin.com/in/grahamjland/)
