@@ -194,6 +194,7 @@ We're almost there! Final steps are the physical wiring of the PicoProbe - ensur
 ![Physical Wiring Diagram](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/physicalpicoprobewiring.png)
 
 And this is what my actual setup looks like, yes I've got the boards the opposite way around to the diagram but the wiring is the same. Also, you may notice that in my setup the PicoProbe uses a Pico board and I'm using it to program a Pico W board.
+
 ![mysetup](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/actualPicoandPicoW.jpeg)
 
 You can use `ls` to see if the new probe is detected once you've copied the software over and ensure the USB cable is still plugged in.
