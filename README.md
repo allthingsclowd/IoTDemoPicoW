@@ -226,7 +226,7 @@ Press Meta-Z for help on special keys
 
 `esc+x` will get you out of this application
 
-Now we're ready to test a application deployment using the PicoProbe.
+Now we're ready to test an application deployment using the PicoProbe.
 
 We'll use the simplist of applications - Hello World - and compile this to use it's UART rather than USB interface. Then we should be able to see the output through the PicoProbe's UART interface.
 
