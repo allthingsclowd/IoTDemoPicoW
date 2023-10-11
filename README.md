@@ -6,7 +6,7 @@ IoT pipelines have that added challenge that the "T" usually implies that the `t
 This repo details the fun and learnings I had whilst configuring my laptop to facilitate playing with the RaspberryPi's first venture into ASIC chip development with the introduction of the rp2040 micro-controller.
 The RPI team have launched 2 micro-controller boards, the Pico £3.90 and the Pico_W £6.30 (prices as of 11 Oct 2023). The latter has wifi built onto the board and is the one I'm interested in playing with today.
 
-![Pico](images/picos.jpeg)
+![Pico](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/picos.jpeg)
 
 So what is a micro-controller and what has one got to do with IoT? The RP2040 RPI Pico micro-controller is a small computer on a single integrated circuit. They have become very effective, efficient and comparatively cheap black boxes that enable physical items to be monitored, measured, instrumented and the data recorded and transmitted to another location. Or, in layperson's terms can be considered like an interpretor - it can be connected to physical devices - "Things" - and integrate them into the cloud (okay, too much marketing? - connect them to the internet).
 
@@ -87,11 +87,11 @@ make -j4
 The `picow_blink.uf2` file is what's required when 'manually' copying the program over to the pico_w. This needs a key press and hold of the `BOOTSEL` button AND unplugging/replugging of the USB cable to get the rp2040 into bootloader mode.
 When the RP2040 is in the correct mode it should appear as an additional drive, RPI-RP2, on your MacBook in the `Finder` app under Locations on the left hand side.
 
-![Pico Bootloader Mode](images/UF2Pico.png)
+![Pico Bootloader Mode](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/UF2Pico.png)
 
 Simply drag (copy) the `picow_blink.uf2` file onto the root of the RPI-RP2 drive and magic happens - the Pico_W loads the new program, disconnects from the MacBook (RPI-RP2 disappears from the attached drives), resets and runs the newly loaded program. If it has been successful you should see the onboard flashing as follows
 
-![flashing gif](images/picow_blink.gif)
+![flashing gif](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/picow_blink.gif)
 
 Manual interactions, as we all know, are not always conducive to productivity - it gets very boring very fast if you're iterating on some code changes and need to keep plugging/unplugging and pressing buttons to test these changes.
 
@@ -186,14 +186,14 @@ drwxr-xr-x   7 graz  staff     224 11 Oct 15:59 pioasm/
 ```
 
 Using the same process followed in Step 8 above we can now copy `picoprobe.uf2` over to the pico that will be used as the Debug Probe [remember to hold the BOOTSEL button before plugging the Pico in to the USB port]
-![picoprobe compiled software](images/picoprobe.png)
+![picoprobe compiled software](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/picoprobe.png)
 
 We're almost there! Final steps are the physical wiring of the PicoProbe - ensure to follow the official documentation for this. It should look something like this
 
-![Physical Wiring Diagram](images/physicalpicoprobewiring.png)
+![Physical Wiring Diagram](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/physicalpicoprobewiring.png)
 
 And this is what my actual setup looks like, yes I've got the boards the opposite way around to the diagram but the wiring is the same. Also, you may notice that in my setup the PicoProbe uses a Pico board and I'm using it to program a Pico W board.
-![mysetup](images/actualPicoandPicoW.jpeg)
+![mysetup](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/actualPicoandPicoW.jpeg)
 
 You can use `ls` to see if the new probe is detected once you've copied the software over and ensure the USB cable is still plugged in.
 If you don't see the `/dev/tty.usbmodemXXX` device, try removing and reconnecting the Pico device from USB.
