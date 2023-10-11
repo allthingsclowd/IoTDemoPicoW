@@ -186,6 +186,7 @@ drwxr-xr-x   7 graz  staff     224 11 Oct 15:59 pioasm/
 ```
 
 Using the same process followed in Step 8 above we can now copy `picoprobe.uf2` over to the pico that will be used as the Debug Probe [remember to hold the BOOTSEL button before plugging the Pico in to the USB port]
+
 ![picoprobe compiled software](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/picoprobe.png)
 
 We're almost there! Final steps are the physical wiring of the PicoProbe - ensure to follow the official documentation for this. It should look something like this
