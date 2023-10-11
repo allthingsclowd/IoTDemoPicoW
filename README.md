@@ -65,7 +65,7 @@ set -gx PICO_PLAYGROUND_PATH $HOME/repos/pico/pico-playground
 ```
 
 ## Our first app
-7. Now let's build our first app, `blink` for the pico_w board. Note: The default blink app in the examples repo is for the pico board without wifi - it's led is physically wired to a different location than the pico_w hence the need for a different blink app located in the wifi subfolder!
+7. Now let's build our first app, `blink` for the pico_w board. Note: The default blink app in the examples repo is for the pico board without wifi - it's LED is physically wired to a different location than the pico_w hence the need for a different blink app located in the wifi subfolder!
 ```
 cd $PICO_EXAMPLES_PATH
 mkdir build
@@ -89,7 +89,7 @@ When the RP2040 is in the correct mode it should appear as an additional drive, 
 
 ![Pico Bootloader Mode](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/UF2Pico.png)
 
-Simply drag (copy) the `picow_blink.uf2` file onto the root of the RPI-RP2 drive and magic happens - the Pico_W loads the new program, disconnects from the MacBook (RPI-RP2 disappears from the attached drives), resets and runs the newly loaded program. If it has been successful you should see the onboard flashing as follows
+Simply drag (copy) the `picow_blink.uf2` file onto the root of the RPI-RP2 drive and magic happens - the Pico_W loads the new program, disconnects from the MacBook (RPI-RP2 disappears from the attached drives), resets and runs the newly loaded program. If it has been successful you should see the onboard LED flashing as follows
 
 ![flashing gif](https://raw.githubusercontent.com/allthingsclowd/IoTDemoPicoW/grazzer/images/picow_blink.gif)
 
